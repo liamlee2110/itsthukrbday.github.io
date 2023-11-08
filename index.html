@@ -49,8 +49,8 @@
             width: 128px;
             background-size: cover;
             border-radius: 200px;
-            box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
-            border: 3px solid #00a0ff;
+            box-shadow: 0px 0px 40px rgba(242, 0, 255, 0.72);
+            border: 3px solid #ae00d9;
             opacity: 1;
             margin: 0 auto;
             margin-top: 20px;
@@ -98,39 +98,14 @@
 
 <body>
 <div class="cs">
-    <img src="dsaf.png" id="logo">
+    <img src="IMG_4575.JPG" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
-<!-- <p class="text" style="color: #ed3073;">
-    We fell in love
-    <br/>
-    <span id="span_dt_dt"></span>
-</p> -->
-<audio autoplay src="paperRings.mp3" loop="loop"></audio>
+<p class="text" style="color: #e4bcca;  ">
+    I love my racoon so much, and I will always do.<br>
+</p>
 
-<script language="javascript">
-    function show_date_time() {
-        window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("11/9/2023");
-        today = new Date();
-        timeold = (today.getTime() - BirthDay.getTime());
-        sectimeold = timeold / 1000
-        secondsold = Math.floor(sectimeold);
-        msPerDay = 24 * 60 * 60 * 1000
-        e_daysold = timeold / msPerDay
-        daysold = Math.floor(e_daysold);
-        e_hrsold = (e_daysold - daysold) * 24;
-        hrsold = Math.floor(e_hrsold);
-        e_minsold = (e_hrsold - hrsold) * 60;
-        minsold = Math.floor((e_hrsold - hrsold) * 60);
-        seconds = Math.floor((e_minsold - minsold) * 60);
-        span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
-    }
-
-    show_date_time();
-</script>
 <script>
-
     var S = {
         init: function () {
             S.Drawing.init('.canvas');
@@ -304,7 +279,7 @@
                                 if (difference <= 0) {
                                     // When countdown reaches zero, clear the current timed actions and start the birthday message sequence
                                     S.Shape.switchShape(S.ShapeBuilder.letter(''));
-                                    performAction("Hey|You know WHAT?|It's|My|Girlfriend's|19th BIRTHDAY!!!|#countdown 5|LOVE MY RACOON");
+                                    performAction("Hey|You know WHAT?|It's|My|Girlfriend's|19th BIRTHDAY!!!|#countdown 5|HPBD MY RACOON!!!|Liam ❤️ Rachel|Xuống tầng đi =)))");
                                 } else {
                                     // Continue the countdown
                                     var hours = Math.floor(difference / (1000 * 60 * 60));
